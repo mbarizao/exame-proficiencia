@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 
-const View = styled.div`
+const View = styled.header`
     position: ${({ position }) => position ?? 'relative'};
     z-index: 999;
     display: flex;
@@ -20,7 +20,7 @@ const View = styled.div`
     }
 `;
 
-const Actions = styled.div`
+const Actions = styled.nav`
     display: flex;
     align-items: center;
     flex-direction: row;  
@@ -31,7 +31,7 @@ const Actions = styled.div`
         text-decoration: none;
         font-size: 20px;
         font-weight: bold;
-        color:  ${({ theme }) => theme.colors.text};
+        color:  ${({ theme }) => theme.colors.constTextDark};
         border-bottom: 4px solid transparent;
         cursor: pointer;
     }
@@ -39,7 +39,7 @@ const Actions = styled.div`
     a:link,
     a:visited,
     a:active {
-        color:  ${({ theme }) => theme.colors.text};
+        color:  ${({ theme }) => theme.colors.constTextDark};
     }
     
     a:hover {

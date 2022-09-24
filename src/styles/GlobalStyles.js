@@ -34,6 +34,22 @@ section {
     }
 }
 
+// Color of all Html tag texts
+* {
+    color: ${({ theme }) => theme.colors.text};
+}
+
+// Footer
+
+footer {
+    padding: 2rem;
+    background-color: ${({theme}) => theme.colors.footer};
+    height: ${({theme}) => theme.defaults.sizes.footerHeight};
+    * {
+        color: ${({ theme }) => theme.colors.constTextLight};
+    }
+}
+
 
 `;
 

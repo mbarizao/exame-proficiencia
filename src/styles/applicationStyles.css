@@ -1,3 +1,11 @@
 .sectionImage {
-    width: 80%;
+    width: 100%;
+}
+
+.energyList {
+    font-size: 1.1rem;
+}
+
+.headerAjust {
+    --bs-gutter-x: 0 !important;
 }

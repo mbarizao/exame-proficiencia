@@ -14,6 +14,7 @@ const Subtitle = styled.p`
     color: ${({theme}) => theme.colors.text};
     font-size: 1.2rem;
     font-weight: normal;   
+    text-align: justify;
 
     @media (max-width: 768px) {
         font-size: 1.1rem;

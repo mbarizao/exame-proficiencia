@@ -40,8 +40,13 @@ const Rounded = styled.button`
     border: 0px;
     border-radius: 20px;
 
-    color: ${({ theme }) => theme.colors.text};
+    color: #000;
     font-weight: bold;
+
+    &:hover {
+        transition: filter 0.5s ease-in-out;
+        filter: brightness(90%);
+    }
 `;
 
 const Button = {

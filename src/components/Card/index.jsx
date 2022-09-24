@@ -5,7 +5,7 @@ const View = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 250px;
+    width: 300px;
     padding: 8px 8px 20px 8px;
     background-color: ${({theme}) => theme.colors.card};
     border-radius: 4px;
@@ -31,7 +31,7 @@ const Card = ({imageSrc, title, description, onClick}) => {
             <Image alt={"Card top"} src={imageSrc}/>
             <Text.CardTitle>{title}</Text.CardTitle>
             <Text.CardDescription>{description}</Text.CardDescription>
-            <Button.Rounded className={'mt-3'} {...onClick}>Saiba mais</Button.Rounded>
+            <Button.Rounded className={'mt-3'} onClick={onClick}>Saiba mais</Button.Rounded>
         </View>
     );
 }
