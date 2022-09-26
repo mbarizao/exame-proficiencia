@@ -1,3 +1,13 @@
+.gotoContent {
+    position: absolute;
+    left: 50%;
+    color: transparent;
+}
+
+.gotoContent:focus-visible {
+    color: #000;
+}
+
 .sectionImage {
     width: 100%;
 }
@@ -9,3 +19,23 @@
 .headerAjust {
     --bs-gutter-x: 0 !important;
 }
+
+.contactFormsFooter {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.textareaContact {
+    max-height: 200px;
+}
+
+.inputError {
+    color: #f55b5b; 
+    margin-top: 4px;
+}
+
+.chart-container {
+    height: 60vh;
+    position: relative;
+ }
+

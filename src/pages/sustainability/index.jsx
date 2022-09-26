@@ -5,7 +5,7 @@ import { Col, Row } from "react-bootstrap";
 const Sustainability = () => {
     return (
         <main role={'main'}>
-            <section>
+            <section aria-label="Sessão descrevendo a sustentabilidade da energia solar">
                 <Row>
                     <Col className={'d-flex justify-content-center'}>
                         <Text.Title>Sustentável</Text.Title>
@@ -13,7 +13,7 @@ const Sustainability = () => {
                 </Row>
                 <Row className={'d-flex justify-content-center'}>
                     <Col className={'col-11'}>
-                        <p className={'text-justify'}>
+                        <p>
                             O planeta está em constante desenvolvimento, por isso, é muito importante destacar a energia solar e a sustentabilidade para que a
                             manutenção dos recursos naturais seja feita de forma consciente.
                             Desta forma, apesar da energia solar ser uma fonte renovável, o meio ambiente ainda sofre riscos de poluição e desmatamento
@@ -26,7 +26,7 @@ const Sustainability = () => {
                                 </div>
                             </Col>
                             <Col className={'my-3 my-md-0 my-lg-0 my-xl-0'}>
-                                <p className={'text-justify'}>
+                                <p>
                                     Em vista disso, energia solar e sustentabilidade trazem diversos benefícios para o meio ambiente,
                                     como: redução de poluição por fontes contaminadoras (carvão) e de gases do efeito estufa, diminuição do desmatamento e
                                     elevação do uso de recursos naturais.

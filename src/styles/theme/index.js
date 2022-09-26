@@ -1,7 +1,7 @@
 const ApplicationThemes = {
     sizes: {
         toolbarHeight: '75px',
-        footerHeight: '250px'
+        footerHeight: '220px'
     },
     spacing: {
         toolbarPadding: '4rem',

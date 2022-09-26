@@ -18,6 +18,7 @@ const MasterLayout = ({ theme, toggleTheme }) => {
 
     return (
         <Container>
+            <a className={'gotoContent'} href="#content">Ir para o conteúdo principal</a>
             <Toolbar.View position={'absolute'}>
                 <a href="/"><img src={Assets.LogoDark} width={100} alt={'Website logo'} /></a>
                 <Toolbar.Actions>
@@ -57,18 +58,21 @@ const MasterLayout = ({ theme, toggleTheme }) => {
                 <img src={Assets.Header} alt={"Imagem de cabeçalho"} />
             </Row>
 
-            <Content>
+            <Content id={'content'}>
                 <Outlet />
             </Content>
 
             <footer>
                 <Row className={'d-flex justify-content-center'}>
-                    <Col className={'col-12 col-md-6 col-lg-6 col-xl-6'}>
-                        <h5><strong>Formas de contato</strong></h5>
-                        <div className={'d-flex flex-column'}>
+                    <Col className={'col-12 col-md-10 col-lg-10 col-xl-10'}>
+                        <span className={'contactFormsFooter'}>Formas de contato</span>
+                        <div className={'d-flex flex-column my-2'}>
                             <span><FaIcons.FaMapMarkerAlt className={'mx-2'} /><strong>Endereço:</strong> <a rel={'noreferrer'} href={"https://www.google.com/maps/place/Cantagalo,+RJ/@-21.9315986,-42.3592531,12z"} target={'_blank'}>Centro, Cantagalo - RJ</a></span>
                             <span><FaIcons.FaEnvelope className={'mx-2'} /><strong>Email:</strong> <a href={'mailto:mbarizao07@gmail.com'}>mbarizao07@gmail.com</a></span>
                             <span><FaIcons.FaWhatsapp className={'mx-2'} /><strong>WhatsApp:</strong> <a href={'https://api.whatsapp.com/send?phone=+552298125-4743&text=Olá%20Marllon!'}>(22) 98125-4743</a></span>
+                        </div>
+                        <div className={'my-4'}>
+                            <span><FaIcons.FaCopyright className={'mx-2'} />Copyright 2022 - Solar Energy</span>
                         </div>
                     </Col>
                 </Row>
