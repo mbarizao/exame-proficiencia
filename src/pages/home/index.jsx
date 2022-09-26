@@ -14,11 +14,13 @@ const Home = () => {
   useEffect(() => {
     const fetch = async () => {
       // Busca dados sobre energia solar na API
-      let response = await FetchApi('http://191.253.209.4:33500/solarAnalytics');
+      let response = await FetchApi('https://merovingian.brasilnet.net.br/api/solarAnalytics');
 
-      if (response.status) {
-        let data = response.data.map((item) => item.qtd)
-        let labels = response.data.map((item) => item.estado)
+      console.log(response)
+
+      if (response) {
+        let data = response.map((item) => item.qtd)
+        let labels = response.map((item) => item.estado)
         setChartData(data);
         setChartLabels(labels);
       }
@@ -79,7 +81,7 @@ const Home = () => {
         </Row>
       </section>
 
-      <section aria-label={""}>
+      <section aria-label={"Implementação de energia solar no Brasil"}>
         <Row className={'d-flex justify-content-center justify-content-md-start justify-content-lg-start justify-content-xl-start'}>
           <Row>
             <Text.Title>Implementação de energia solar no Brasil</Text.Title>
